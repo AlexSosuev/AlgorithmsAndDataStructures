@@ -99,4 +99,21 @@ public class LinkedListDouble {
             }
         }
     }
+
+    public void reverse() {
+        Node currentNode = head;
+        while (currentNode != null) {
+            Node next = currentNode.next;
+            Node previous = currentNode.previous;
+            currentNode.next = previous;
+            currentNode.previous = next;
+            if (previous == null) {
+                tail = currentNode;
+            }
+            if (head == null) {
+                head = currentNode;
+            }
+            currentNode = next;
+        }
+    }
 }
