@@ -98,7 +98,7 @@ public class RedBlackTree {
         return result;
     }
 
-    private class Node {
+    private static class Node {
         private int value;
         private java.awt.Color color;
         private Node leftChild;

@@ -31,10 +31,10 @@ public class Tree {
 
 //Обход в ширину
     private Node find(int value) {
-        List<Node> line = new ArrayList<>();
+        List<Node> line = new ArrayList();
         line.add(root);
         while (line.size() > 0) {
-            List<Node> nextLine = new ArrayList<>();
+            List<Node> nextLine = new ArrayList();
             for (Node node : line) {
                 if (node.value == value) {
                     return node;
